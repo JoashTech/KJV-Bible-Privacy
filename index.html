@@ -10,12 +10,38 @@
             margin: 40px;
             line-height: 1.6;
             color: #333;
+            max-width: 800px;
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 { 
+            color: #34495e; 
+            margin-top: 30px;
+        }
         p, ul { color: #555; }
         a { color: #2980b9; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
@@ -23,11 +49,16 @@
     <p><strong>Last Updated: August 21, 2025</strong></p>
     <p>JoshTechApps ("we," "us," or "our") develops King James Bible ("the App"), a free, ad-supported application providing daily Bible verses, prayers, quizzes, and customization features. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your information when you use the App.</p>
 
+    <div class="container">
+        <p><strong>Important Note About Advertising:</strong> Our app uses Google AdMob for advertising. Please review 
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob's Privacy Policy</a> for detailed information about how they handle your data.</p>
+    </div>
+
     <h2>1. Information We Collect</h2>
     <ul>
-        <li><strong>Advertising Data</strong>: We use Google AdMob to display ads (e.g., Interstitial, Native Advanced, Rewarded). AdMob may collect device identifiers such as Advertising ID, IP address, device type, and usage data to serve personalized ads, as described in <a href="https://policies.google.com/privacy" target="_blank">Google’s Privacy Policy</a>.</li>
+        <li><strong>Advertising Data</strong>: We use Google AdMob to display ads (e.g., Interstitial, Native Advanced, Rewarded). AdMob may collect device identifiers such as Advertising ID, IP address, device type, and usage data to serve personalized ads, as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob's Privacy Policy</a>.</li>
         <li><strong>Local Data</strong>: We store notes, favorite verses, and quiz progress locally on your device using Room persistence. This data is not transmitted to our servers or shared with third parties.</li>
-        <li><strong>Notifications</strong>: If you enable notifications in the App’s settings, we use device permissions to schedule daily reminders for verses and prayers at 08:00 and 21:00.</li>
+        <li><strong>Notifications</strong>: If you enable notifications in the App's settings, we use device permissions to schedule daily reminders for verses and prayers at 08:00 and 21:00.</li>
         <li><strong>No Personal Information</strong>: We do not collect personal details such as your name, email, or location unless you voluntarily provide them (e.g., via email contact).</li>
         <li><strong>No Analytics Data</strong>: We do not use analytics tools (e.g., Google Analytics) to track user behavior in the App.</li>
     </ul>
@@ -40,33 +71,38 @@
     </ul>
 
     <h2>3. Data Sharing</h2>
-    <p>We do not share your local data or notification preferences with any third parties. AdMob may share device identifiers with its advertising partners (e.g., ad networks) to serve ads, as outlined in <a href="https://policies.google.com/privacy" target="_blank">Google’s Privacy Policy</a>. We do not use other third-party SDKs that collect data.</p>
+    <p>We do not share your local data or notification preferences with any third parties. AdMob may share device identifiers with its advertising partners (e.g., ad networks) to serve ads, as outlined in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob's Privacy Policy</a>. We do not use other third-party SDKs that collect data.</p>
 
     <h2>4. Your Choices</h2>
     <p>You have the following options regarding your data:
         <ul>
-            <li>Opt out of personalized ads by resetting your Advertising ID or disabling personalized ads in your device’s settings (e.g., Android Settings > Google > Ads).</li>
-            <li>Disable notifications in the App’s settings or your device’s notification settings.</li>
-            <li>Delete local data by clearing the App’s data through your device’s settings or uninstalling the App.</li>
+            <li>Opt out of personalized ads by resetting your Advertising ID or disabling personalized ads in your device's settings (e.g., Android Settings > Google > Ads).</li>
+            <li>Disable notifications in the App's settings or your device's notification settings.</li>
+            <li>Delete local data by clearing the App's data through your device's settings or uninstalling the App.</li>
+            <li>Learn more about AdMob's data practices and controls in their <a href="https://support.google.com/admob/answer/6128543" target="_blank">Privacy Policy</a>.</li>
         </ul>
     </p>
 
     <h2>5. Data Retention</h2>
-    <p>We retain local data (notes, favorite verses, quiz progress) on your device until you clear the App’s data or uninstall it. We do not store any personal data on our servers.</p>
+    <p>We retain local data (notes, favorite verses, quiz progress) on your device until you clear the App's data or uninstall it. We do not store any personal data on our servers.</p>
 
-    <h2>6. Children’s Privacy</h2>
-    <p>The App is rated E for Everyone and is not directed at children under 13. We do not knowingly collect personal information from children under 13.If you are under 13 years of age, please do not submit any Personal Information through our Mobile Application. We encourage parents and guardians to mornitor their children`s internet usage and to help us enforce this policy by instructing their children never to provide Personal Information through the Mobile Application. If we become aware of such data, we will delete it immediately. Please contact us if you have concerns.</p>
+    <h2>6. Children's Privacy</h2>
+    <p>The App is rated E for Everyone and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you are under 13 years of age, please do not submit any Personal Information through our Mobile Application. We encourage parents and guardians to monitor their children's internet usage and to help us enforce this policy by instructing their children never to provide Personal Information through the Mobile Application. If we become aware of such data, we will delete it immediately. Please contact us if you have concerns.</p>
 
     <h2>7. Data Security</h2>
-    <p>We rely on Android’s built-in security features, such as app sandboxing, to protect local data stored on your device. Since no data is transmitted to our servers, there is no risk of server-side data breaches.</p>
+    <p>We rely on Android's built-in security features, such as app sandboxing, to protect local data stored on your device. Since no data is transmitted to our servers, there is no risk of server-side data breaches.</p>
 
     <h2>8. International Compliance</h2>
-    <p>For users in the European Union (GDPR) or California (CCPA), you may have additional rights, such as requesting data access or deletion. Since we only store data locally and use AdMob for ads, you can exercise these rights through your device settings or Google’s ad settings. Contact us for assistance.</p>
+    <p>For users in the European Union (GDPR) or California (CCPA), you may have additional rights, such as requesting data access or deletion. Since we only store data locally and use AdMob for ads, you can exercise these rights through your device settings or Google's ad settings. Contact us for assistance.</p>
 
     <h2>9. Changes to This Policy</h2>
     <p>We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will post the updated policy on this page, and your continued use of the App constitutes consent to those changes.</p>
 
     <h2>10. Contact Us</h2>
     <p>If you have questions or concerns about this Privacy Policy, please contact us at <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a>.</p>
+
+    <footer>
+        <p>This privacy policy has been updated to include specific references to Google AdMob's privacy information.</p>
+    </footer>
 </body>
 </html>

@@ -91,9 +91,23 @@
             margin: 25px 0;
             border-left: 5px solid #e17055;
         }
+
+        .premium-box {
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 5px solid #0984e3;
+        }
         
         .highlight-box strong {
             color: #d63031;
+            font-size: 1.1em;
+        }
+
+        .premium-box strong {
+            color: white;
             font-size: 1.1em;
         }
         
@@ -190,6 +204,17 @@
             vertical-align: middle;
         }
 
+        .premium-badge {
+            display: inline-block;
+            background: #00b894;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
         .data-flow {
             background: linear-gradient(135deg, #a29bfe, #6c5ce7);
             color: white;
@@ -219,6 +244,53 @@
             font-weight: bold;
             color: #2c3e50;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .pricing-tier {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid #e9ecef;
+        }
+
+        .pricing-tier.popular {
+            border-color: #00b894;
+            transform: scale(1.05);
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00b894;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+
+        .duration {
+            color: #7f8c8d;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -252,6 +324,55 @@
                 </div>
             </div>
 
+            <!-- NEW REMOVE ADS SECTION -->
+            <div class="section">
+                <h2>Remove Ads - Premium Features <span class="premium-badge">Premium</span></h2>
+                <p>We offer an optional "Remove Ads" feature through in-app purchases. Here's what you need to know:</p>
+                
+                <div class="premium-box">
+                    <strong>✨ Ad-Free Experience Benefits:</strong>
+                    <ul>
+                        <li>Complete removal of all banner, interstitial, and native ads</li>
+                        <li>No data sharing with advertising networks when premium is active</li>
+                        <li>Faster app performance without ad loading delays</li>
+                        <li>Uninterrupted Bible reading and study experience</li>
+                    </ul>
+                </div>
+
+                <h3>Purchase Options & Pricing</h3>
+                <div class="pricing-table">
+                    <div class="pricing-tier">
+                        <h4>6 Months</h4>
+                        <div class="price">$2.99</div>
+                        <div class="duration">Ad-free for 6 months</div>
+                    </div>
+                    <div class="pricing-tier popular">
+                        <div class="popular-badge">BEST VALUE</div>
+                        <h4>1 Year</h4>
+                        <div class="price">$4.99</div>
+                        <div class="duration">Ad-free for 12 months</div>
+                    </div>
+                    <div class="pricing-tier">
+                        <h4>Lifetime</h4>
+                        <div class="price">$9.99</div>
+                        <div class="duration">Permanent ad removal</div>
+                    </div>
+                </div>
+
+                <h3>Purchase & Privacy Details</h3>
+                <ul>
+                    <li><strong>Payment Processing</strong>: All purchases are processed by Google Play Store. We never see or store your payment information.</li>
+                    <li><strong>Data Collection</strong>: Google collects necessary purchase data for transaction processing and subscription management.</li>
+                    <li><strong>Restore Purchases</strong>: Use the "Restore Purchases" feature to regain premium access on new devices or after reinstallation.</li>
+                    <li><strong>Refund Policy</strong>: Refunds are subject to Google Play Store policies. Contact Google support for refund requests.</li>
+                    <li><strong>Privacy Impact</strong>: When you purchase Remove Ads, we immediately stop sharing device identifiers with advertising networks.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🔒 Premium Privacy:</strong> When you purchase Remove Ads, your device stops sharing data with advertising partners. Your local data (notes, favorites) remains private and secure on your device.
+                </div>
+            </div>
+
             <div class="section">
                 <h2>1. Information We Share</h2>
                 <ul>
@@ -279,18 +400,21 @@
                     <li><strong>Analytics</strong>: We use shared usage data to understand app performance and improve user experience</li>
                     <li><strong>App Features</strong>: To save your notes, favorites, and quiz progress locally on your device</li>
                     <li><strong>Notifications</strong>: To deliver scheduled reminders when you opt-in</li>
+                    <li><strong>Premium Features</strong>: To verify and maintain your Remove Ads purchase status</li>
                 </ul>
             </div>
 
             <div class="section">
                 <h2>3. Data Sharing & Transparency</h2>
                 <p>We share device identifiers with advertising and analytics partners. We do NOT share your local data (notes, favorites, quiz progress) or personal information. Third-party partners may process shared device data as outlined in their respective privacy policies.</p>
+                <p><strong>Premium Users</strong>: When you purchase Remove Ads, device identifier sharing with advertising networks is immediately disabled.</p>
             </div>
 
             <div class="section">
                 <h2>4. Your Control & Choices</h2>
                 <ul>
                     <li>Opt out of personalized ads in your device settings (Android Settings > Google > Ads)</li>
+                    <li>Purchase "Remove Ads" to eliminate all advertising and associated data sharing</li>
                     <li>Disable notifications in the app or device settings</li>
                     <li>Delete all local data by clearing app data or uninstalling</li>
                     <li>Reset your Advertising ID for a fresh start</li>
@@ -301,7 +425,7 @@
 
             <div class="section">
                 <h2>5. Data Security <span class="badge">Secure</span></h2>
-                <p>We leverage Android's built-in security features including app sandboxing. Since no personal data is transmitted to our servers, there's minimal risk of data breaches.</p>
+                <p>We leverage Android's built-in security features including app sandboxing. Since no personal data is transmitted to our servers, there's minimal risk of data breaches. Premium purchase data is securely handled by Google Play Services.</p>
             </div>
 
             <div class="section">
@@ -316,7 +440,7 @@
 
             <div class="contact-info">
                 <h2>💌 Contact Us</h2>
-                <p>Have questions about privacy or data practices?</p>
+                <p>Have questions about privacy, data practices, or premium features?</p>
                 <p><strong>Email:</strong> <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a></p>
                 <p><strong>Response Time:</strong> Typically within 2-3 business days</p>
             </div>

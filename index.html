@@ -100,6 +100,15 @@
             margin: 25px 0;
             border-left: 5px solid #0984e3;
         }
+
+        .firebase-box {
+            background: linear-gradient(135deg, #FFA000, #FF6F00);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 5px solid #FF4081;
+        }
         
         .highlight-box strong {
             color: #d63031;
@@ -107,6 +116,11 @@
         }
 
         .premium-box strong {
+            color: white;
+            font-size: 1.1em;
+        }
+
+        .firebase-box strong {
             color: white;
             font-size: 1.1em;
         }
@@ -215,6 +229,17 @@
             vertical-align: middle;
         }
 
+        .firebase-badge {
+            display: inline-block;
+            background: #FF6F00;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
         .data-flow {
             background: linear-gradient(135deg, #a29bfe, #6c5ce7);
             color: white;
@@ -292,6 +317,27 @@
             color: #7f8c8d;
             font-size: 0.9em;
         }
+
+        .firebase-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .firebase-service {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid #FFA000;
+        }
+
+        .firebase-service h4 {
+            color: #FF6F00;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -312,6 +358,43 @@
                 <strong>🔍 Data Safety Notice:</strong> For detailed information about data collection and sharing as required by Google Play, please refer to our Data Safety section in the Google Play Store listing.
             </div>
 
+            <!-- FIREBASE SERVICES SECTION -->
+            <div class="section">
+                <h2>Firebase Services <span class="firebase-badge">Google</span></h2>
+                <p>We use Google Firebase services to improve app performance, stability, and user experience. Here's how we use Firebase:</p>
+                
+                <div class="firebase-box">
+                    <strong>🔥 Firebase Services We Use:</strong>
+                    <div class="firebase-services">
+                        <div class="firebase-service">
+                            <h4>Firebase Crashlytics</h4>
+                            <p>Collects crash reports and stability data to help us fix issues quickly</p>
+                        </div>
+                        <div class="firebase-service">
+                            <h4>Firebase Analytics</h4>
+                            <p>Provides insights into app usage and user behavior patterns</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Firebase Data Collection Details</h3>
+                <ul>
+                    <li><strong>Crashlytics Data</strong>: We collect crash traces, stack traces, device information (OS version, model), and unique identifiers (Crashlytics Installation UUID) to diagnose and fix app stability issues. This data is retained for 90 days.</li>
+                    <li><strong>Analytics Data</strong>: We collect aggregated, anonymized usage data including device information, app interactions, and engagement metrics to understand how users interact with our app and improve features.</li>
+                    <li><strong>Data Processing</strong>: All Firebase data is processed by Google according to their privacy and security standards. We do not access personally identifiable information through these services.</li>
+                    <li><strong>Data Retention</strong>: Crashlytics data is retained for 90 days. Analytics data retention follows Google's standard policies unless configured otherwise.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🔒 Firebase Privacy Links:</strong>
+                    <br><br>
+                    <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Overview</a> • 
+                    <a href="https://firebase.google.com/support/privacy#crashlytics" target="_blank">Crashlytics Privacy</a> • 
+                    <a href="https://firebase.google.com/terms/crashlytics" target="_blank">Crashlytics Terms</a> •
+                    <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+                </div>
+            </div>
+
             <div class="data-flow">
                 <h3>📊 Data Flow Transparency</h3>
                 <p><strong>We SHARE Device IDs → Third Parties COLLECT them</strong></p>
@@ -321,10 +404,11 @@
                     <div class="partner-logo">Unity Ads</div>
                     <div class="partner-logo">Liftoff (Vungle)</div>
                     <div class="partner-logo">Facebook Audience Network</div>
+                    <div class="partner-logo">Google Firebase</div>
                 </div>
             </div>
 
-            <!-- NEW REMOVE ADS SECTION -->
+            <!-- REMOVE ADS SECTION -->
             <div class="section">
                 <h2>Remove Ads - Premium Features <span class="premium-badge">Premium</span></h2>
                 <p>We offer an optional "Remove Ads" feature through in-app purchases. Here's what you need to know:</p>
@@ -369,7 +453,7 @@
                 </ul>
 
                 <div class="highlight-box">
-                    <strong>🔒 Premium Privacy:</strong> When you purchase Remove Ads, your device stops sharing data with advertising partners. Your local data (notes, favorites) remains private and secure on your device.
+                    <strong>🔒 Premium Privacy:</strong> When you purchase Remove Ads, your device stops sharing data with advertising partners. Your local data (notes, favorites) remains private and secure on your device. Note: Firebase services (Crashlytics & Analytics) continue to operate for app improvement purposes.
                 </div>
             </div>
 
@@ -377,6 +461,7 @@
                 <h2>1. Information We Share</h2>
                 <ul>
                     <li><strong>Device Identifiers for Advertising & Analytics</strong>: Our app shares your device's Advertising ID with third-party services to display ads and analyze app performance. This data is collected directly by our partners according to their privacy policies.</li>
+                    <li><strong>Firebase Services Data</strong>: We share crash reports and analytics data with Google Firebase to improve app stability and user experience.</li>
                     <li><strong>Local Data</strong>: We store notes, favorite verses, and quiz progress locally on your device using Room persistence. This data never leaves your device.</li>
                     <li><strong>Notifications</strong>: If enabled, we schedule daily reminders for verses and prayers at 08:00 and 21:00.</li>
                     <li><strong>No Personal Information</strong>: We do not collect names, emails, or personal details unless voluntarily provided via email contact.</li>
@@ -390,14 +475,15 @@
                 <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Ads Privacy Policy</a> • 
                 <a href="https://vungle.com/privacy/" target="_blank">Liftoff (Vungle) Privacy Policy</a> •
                 <a href="https://www.facebook.com/privacy/policy/" target="_blank">Facebook Audience Network Privacy Policy</a> •
-                <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Analytics Privacy</a>
+                <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a> •
+                <a href="https://firebase.google.com/support/privacy#crashlytics" target="_blank">Firebase Crashlytics Privacy</a>
             </div>
 
             <div class="section">
                 <h2>2. How Your Information Is Used</h2>
                 <ul>
                     <li><strong>Advertising</strong>: Our partners use shared device identifiers to display relevant ads and support our free app</li>
-                    <li><strong>Analytics</strong>: We use shared usage data to understand app performance and improve user experience</li>
+                    <li><strong>Analytics & Stability</strong>: We use Firebase services to understand app performance, fix crashes, and improve user experience</li>
                     <li><strong>App Features</strong>: To save your notes, favorites, and quiz progress locally on your device</li>
                     <li><strong>Notifications</strong>: To deliver scheduled reminders when you opt-in</li>
                     <li><strong>Premium Features</strong>: To verify and maintain your Remove Ads purchase status</li>
@@ -407,7 +493,7 @@
             <div class="section">
                 <h2>3. Data Sharing & Transparency</h2>
                 <p>We share device identifiers with advertising and analytics partners. We do NOT share your local data (notes, favorites, quiz progress) or personal information. Third-party partners may process shared device data as outlined in their respective privacy policies.</p>
-                <p><strong>Premium Users</strong>: When you purchase Remove Ads, device identifier sharing with advertising networks is immediately disabled.</p>
+                <p><strong>Premium Users</strong>: When you purchase Remove Ads, device identifier sharing with advertising networks is immediately disabled. Firebase services continue to operate for app improvement.</p>
             </div>
 
             <div class="section">
@@ -419,35 +505,46 @@
                     <li>Delete all local data by clearing app data or uninstalling</li>
                     <li>Reset your Advertising ID for a fresh start</li>
                     <li>Manage data collection through our partners' privacy controls</li>
+                    <li>For Firebase data, you can manage preferences through Google's privacy controls</li>
                     <li>For Facebook Audience Network, you can manage ad preferences at <a href="https://www.facebook.com/adpreferences" target="_blank">Facebook Ad Preferences</a></li>
                 </ul>
             </div>
 
             <div class="section">
                 <h2>5. Data Security <span class="badge">Secure</span></h2>
-                <p>We leverage Android's built-in security features including app sandboxing. Since no personal data is transmitted to our servers, there's minimal risk of data breaches. Premium purchase data is securely handled by Google Play Services.</p>
+                <p>We leverage Android's built-in security features including app sandboxing. Since no personal data is transmitted to our servers, there's minimal risk of data breaches. Premium purchase data is securely handled by Google Play Services. Firebase data is protected by Google's enterprise-grade security infrastructure.</p>
             </div>
 
             <div class="section">
-                <h2>6. Children's Privacy <span class="badge">Family Safe</span></h2>
+                <h2>6. Data Retention</h2>
+                <ul>
+                    <li><strong>Local Data</strong>: Notes, favorites, and quiz progress are stored locally on your device and can be deleted by clearing app data</li>
+                    <li><strong>Firebase Crashlytics</strong>: Crash reports and stability data are retained for 90 days</li>
+                    <li><strong>Firebase Analytics</strong>: Usage data follows Google's standard analytics retention policies</li>
+                    <li><strong>Advertising Data</strong>: Device identifiers shared with ad networks follow their respective retention policies</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Children's Privacy <span class="badge">Family Safe</span></h2>
                 <p>Our app is rated E for Everyone and complies with COPPA. We do not knowingly collect data from children under 13. Parents can contact us immediately if they have concerns.</p>
             </div>
 
             <div class="section">
-                <h2>7. International Compliance</h2>
-                <p>For EU (GDPR) and California (CCPA) users: Exercise your rights through device settings or advertising network controls. Contact us for assistance with data requests.</p>
+                <h2>8. International Compliance</h2>
+                <p>For EU (GDPR) and California (CCPA) users: Exercise your rights through device settings or advertising network controls. Contact us for assistance with data requests related to Firebase services or other data practices.</p>
             </div>
 
             <div class="contact-info">
                 <h2>💌 Contact Us</h2>
-                <p>Have questions about privacy, data practices, or premium features?</p>
+                <p>Have questions about privacy, data practices, premium features, or Firebase services?</p>
                 <p><strong>Email:</strong> <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a></p>
                 <p><strong>Response Time:</strong> Typically within 2-3 business days</p>
             </div>
 
             <div class="section">
-                <h2>8. Policy Updates</h2>
-                <p>We may update this policy to reflect changes in practices or regulations. Continued app use after updates constitutes acceptance of changes.</p>
+                <h2>9. Policy Updates</h2>
+                <p>We may update this policy to reflect changes in practices or regulations. Continued app use after updates constitutes acceptance of changes. Significant changes will be notified through app updates.</p>
             </div>
         </div>
         

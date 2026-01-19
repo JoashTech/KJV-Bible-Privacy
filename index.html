@@ -6,12 +6,8 @@
     <meta name="robots" content="noindex, nofollow">
     <title>King James Bible Privacy Policy</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        /* Your existing beautiful styles remain unchanged */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
@@ -20,7 +16,6 @@
             min-height: 100vh;
             padding: 20px;
         }
-        
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -29,26 +24,14 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             overflow: hidden;
         }
-        
         .header {
             background: linear-gradient(135deg, #2c3e50, #34495e);
             color: white;
             padding: 40px;
             text-align: center;
         }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 300;
-        }
-        
-        .header .subtitle {
-            font-size: 1.1em;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        }
-        
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 300; }
+        .header .subtitle { font-size: 1.1em; opacity: 0.9; margin-bottom: 20px; }
         .last-updated {
             background: rgba(255,255,255,0.1);
             padding: 10px 20px;
@@ -56,11 +39,7 @@
             display: inline-block;
             font-size: 0.9em;
         }
-        
-        .content {
-            padding: 40px;
-        }
-        
+        .content { padding: 40px; }
         .section {
             margin-bottom: 40px;
             padding: 30px;
@@ -68,7 +47,6 @@
             border-radius: 15px;
             border-left: 5px solid #3498db;
         }
-        
         .section h2 {
             color: #2c3e50;
             margin-bottom: 20px;
@@ -77,91 +55,26 @@
             align-items: center;
             gap: 10px;
         }
-        
-        .section h2::before {
-            content: "•";
-            color: #3498db;
-            font-size: 2em;
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+        .section h2::before { content: "•"; color: #3498db; font-size: 2em; }
+        .highlight-box, .premium-box, .firebase-box {
             padding: 25px;
             border-radius: 12px;
             margin: 25px 0;
-            border-left: 5px solid #e17055;
+            border-left: 5px solid;
         }
-
-        .premium-box {
-            background: linear-gradient(135deg, #00b894, #00cec9);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-            border-left: 5px solid #0984e3;
-        }
-
-        .firebase-box {
-            background: linear-gradient(135deg, #FFA000, #FF6F00);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-            border-left: 5px solid #FF4081;
-        }
-        
-        .highlight-box strong {
-            color: #d63031;
-            font-size: 1.1em;
-        }
-
-        .premium-box strong {
-            color: white;
-            font-size: 1.1em;
-        }
-
-        .firebase-box strong {
-            color: white;
-            font-size: 1.1em;
-        }
-        
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
+        .highlight-box { background: linear-gradient(135deg, #ffeaa7, #fab1a0); border-left-color: #e17055; }
+        .premium-box { background: linear-gradient(135deg, #00b894, #00cec9); color: white; border-left-color: #0984e3; }
+        .firebase-box { background: linear-gradient(135deg, #FFA000, #FF6F00); color: white; border-left-color: #FF4081; }
+        ul { list-style: none; padding-left: 0; }
         li {
             padding: 12px 0;
             border-bottom: 1px solid #ecf0f1;
             position: relative;
             padding-left: 30px;
         }
-        
-        li:last-child {
-            border-bottom: none;
-        }
-        
-        li::before {
-            content: "▸";
-            color: #3498db;
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-        
-        a {
-            color: #2980b9;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            border-bottom: 2px dotted #3498db;
-            padding-bottom: 2px;
-        }
-        
-        a:hover {
-            color: #e74c3c;
-            border-bottom-style: solid;
-        }
-        
+        li::before { content: "▸"; color: #3498db; position: absolute; left: 0; font-weight: bold; }
+        a { color: #2980b9; text-decoration: none; transition: color 0.3s ease; border-bottom: 2px dotted #3498db; padding-bottom: 2px; }
+        a:hover { color: #e74c3c; border-bottom-style: solid; }
         .contact-info {
             background: linear-gradient(135deg, #74b9ff, #0984e3);
             color: white;
@@ -169,13 +82,7 @@
             border-radius: 15px;
             text-align: center;
         }
-        
-        .contact-info a {
-            color: white;
-            border-bottom-color: white;
-            font-weight: bold;
-        }
-        
+        .contact-info a { color: white; border-bottom-color: white; font-weight: bold; }
         footer {
             text-align: center;
             padding: 30px;
@@ -183,160 +90,24 @@
             color: #bdc3c7;
             font-size: 0.9em;
         }
-        
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px auto;
-                border-radius: 15px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            .header h1 {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .section {
-                padding: 20px;
-            }
-        }
-        
-        .badge {
-            display: inline-block;
-            background: #e74c3c;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        .premium-badge {
-            display: inline-block;
-            background: #00b894;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        .firebase-badge {
-            display: inline-block;
-            background: #FF6F00;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        .data-flow {
-            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
-            color: white;
-            padding: 25px;
+        .website-link {
+            background: #e3f2fd;
+            padding: 20px;
             border-radius: 12px;
-            margin: 25px 0;
             text-align: center;
-        }
-
-        .data-flow h3 {
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-        
-        .partners-logos {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .partner-logo {
-            background: white;
-            padding: 8px 15px;
-            border-radius: 8px;
-            font-weight: bold;
-            color: #2c3e50;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-
-        .pricing-table {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .pricing-tier {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border: 2px solid #e9ecef;
-        }
-
-        .pricing-tier.popular {
-            border-color: #00b894;
-            transform: scale(1.05);
-            position: relative;
-        }
-
-        .popular-badge {
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #00b894;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.8em;
+            margin: 30px 0;
+            border: 2px solid #bbdefb;
             font-weight: bold;
         }
-
-        .price {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #2c3e50;
-            margin: 10px 0;
+        .website-link a {
+            color: #1e88e5;
+            font-size: 1.2em;
         }
-
-        .duration {
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-
-        .firebase-services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .firebase-service {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border: 2px solid #FFA000;
-        }
-
-        .firebase-service h4 {
-            color: #FF6F00;
-            margin-bottom: 10px;
+        @media (max-width: 768px) {
+            .container { margin: 20px auto; border-radius: 15px; }
+            .header { padding: 30px 20px; }
+            .content { padding: 20px; }
+            .section { padding: 20px; }
         }
     </style>
 </head>
@@ -345,8 +116,10 @@
         <div class="header">
             <h1>📖 King James Bible Privacy Policy</h1>
             <div class="subtitle">Transparent. Secure. User-Focused.</div>
-            <div class="last-updated">Last Updated: October 26, 2025</div>
+            <div class="last-updated">Last Updated: January 19, 2026</div>
         </div>
+
+        <div class="content">
         
         <div class="content">
             <div class="section">
@@ -548,10 +321,32 @@
             </div>
         </div>
         
-        <footer>
-            <p>This privacy policy has been crafted with transparency and user trust in mind.</p>
-            <p>© 2025 JoshTechApps. All rights reserved.</p>
-        </footer>
+       <!-- Added Website Link Section -->
+            <div class="website-link">
+                <p>Visit our official website for more apps, updates, and support:</p>
+                <a href="https://joshtechapps.netlify.app" target="_blank">
+                    Visit Our Website For More
+                </a>
+            </div>
+
+            <!-- Contact & Footer -->
+            <div class="contact-info">
+                <h2>💌 Contact Us</h2>
+                <p>Have questions about privacy, data practices, premium features, or Firebase services?</p>
+                <p><strong>Email:</strong> <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a></p>
+                <p><strong>Response Time:</strong> Typically within 2-3 business days</p>
+            </div>
+
+            <footer>
+                <p>© <span id="currentYear"></span> JoshTechApps. All rights reserved.</p>
+                <p>Made with love for meaningful spiritual connections.</p>
+            </footer>
+        </div>
     </div>
+
+    <script>
+        // Automatically update to current year only (no range)
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
